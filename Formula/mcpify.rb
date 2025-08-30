@@ -6,9 +6,10 @@ class Mcpify < Formula
   license "MIT"
   
   depends_on "go" => :build
+  depends_on "libpcap" 
   
   def install
-    system "go", "build", *std_go_args(ldflags: "-s -w")
+    system "go", "build", *std_go_args(ldflags: "-s -w", output: bin/"mcpify"), "./cmd/mcpify"
   end
   
   test do
