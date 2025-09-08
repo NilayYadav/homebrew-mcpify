@@ -5,20 +5,20 @@ class Mcpify < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/NilayYadav/mcpify/releases/download/v1.0.9/mcpify-darwin-arm64"
-      sha256 "fc8d6754c893061867134e9bc8b9bc11f8457675243fde0d0f43295e232f9039"
+      url "https://github.com/NilayYadav/mcpify/releases/download/v1.0.10/mcpify-darwin-arm64"
+      sha256 "sha256:6b253f855726a825c20f8d949f7066e994d74768b638203d0cfdfddf9c8dccf1"
     else
-      url "https://github.com/NilayYadav/mcpify/releases/download/v1.0.9/mcpify-darwin-amd64"
-      sha256 "86362cd9abcf47f0fe24460999756fbc6383e0b7eddab0b8de75ccd77e777c4b"
+      url "https://github.com/NilayYadav/mcpify/releases/download/v1.0.10/mcpify-darwin-amd64"
+      sha256 "sha256:ae727b3768aecaf2829317a5a9f2b8ea92c6e3a7176edc296961596c1b7ef1ee"
     end
   end
 
   on_linux do
-    url "https://github.com/NilayYadav/mcpify/releases/download/v1.0.9/mcpify-linux-amd64"
-    sha256 "2cb78b8edca694f4456d1084718311ad1bb63d4b03ecf3fa24449a8a159f8c71"
+    url "https://github.com/NilayYadav/mcpify/releases/download/v1.0.10/mcpify-linux-amd64"
+    sha256 "sha256:33b45085b51055339c34911d2de930a8310cc9a6d5ef60b239e4aa8fda500365"
   end
 
-  version "1.0.9"
+  version "1.0.10"
 
   def install
     bin.install Dir["mcpify-*"].first => "mcpify"
