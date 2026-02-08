@@ -1,5 +1,5 @@
 class Mcpify < Formula
-  desc "API endpoints to MCP tools"
+  desc "APIs to MCP tools"
   homepage "https://github.com/NilayYadav/mcpify"
   license "MIT"
 
